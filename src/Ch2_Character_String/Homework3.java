@@ -2,7 +2,7 @@ package Ch2_Character_String;
 
 public class Homework3 {
     public static void main(String[] args) {
-        String sentence = "Hello World";
+        String sentence = "Hello World! This is a test sentence.";
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < sentence.length(); i++) {
@@ -12,6 +12,7 @@ public class Homework3 {
                 result.append(ch);
             }
         }
+
         System.out.println(result.toString());
     }
 }

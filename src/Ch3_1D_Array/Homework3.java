@@ -27,7 +27,7 @@ public class Homework3 {
         System.out.println("The youngest person(s): ");
         for (int i = 0; i < 3; i++) {
             if (ages[i] == minAge) {
-                System.out.println(names[i]);
+                System.out.println(names[i] + ages[i] + " years old");
             }
         }
 

@@ -10,16 +10,16 @@ public class Homework6 {
         scanner.close();
 
         StringBuilder result = new StringBuilder();
-        boolean[] seen = new boolean[256]; // ASCII character set
+        boolean[] seen = new boolean[256]; // ASCII
 
-        for (int i = 0; i < word.length(); i++) {
-            char ch = Character.toLowerCase(word.charAt(i));
-            if (!seen[ch]) {
-                seen[ch] = true;
-                result.append(word.charAt(i));
+        for (char ch : word.toCharArray()) {
+            char lowerCh = Character.toLowerCase(ch);
+            if (!seen[lowerCh]) {
+                seen[lowerCh] = true;
+                result.append(ch);
             }
         }
 
-        System.out.println("Result: " + result.toString());
+        System.out.println("Result: " + result);
     }
 }
